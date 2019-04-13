@@ -8,9 +8,10 @@
            fetch="https://github.com/sonyxperiadev/" />
 
   <project path="device/sony/sepolicy" name="SonyAosp/device_sony_sepolicy" groups="device" remote="github" revision="android-9.0" />
-  <project path="device/sony/common" name="SonyAosp/device_sony_common" groups="device" remote="github" revision="android-9.0" />
-  <project path="device/sony/common/hardware/qcom" name="SonyAosp/device_sony_common_hardware_qcom" groups="device" remote="github" revision="android-9.0" />
-
+  <project path="device/sony/common" name="SonyAosp/device_sony_common" groups="device" remote="github" revision="android-9.0" >
+    <linkfile src="misc/no-op/Android.mk" dest="hardware/qcom/sdm845/Android.mk" />
+  </project>
+  
   <project path="device/sony/loire" name="SonyAosp/device_sony_loire" groups="device" remote="github" revision="android-9.0" />
   <project path="device/sony/kugo" name="SonyAosp/device_sony_kugo" groups="device" remote="github" revision="android-9.0" />
   <project path="device/sony/suzu" name="SonyAosp/device_sony_suzu" groups="device" remote="github" revision="android-9.0" />
